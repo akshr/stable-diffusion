@@ -232,6 +232,11 @@ and sample with
 python scripts/txt2img.py --prompt "a photograph of an astronaut riding a horse" --plms 
 ```
 
+#### Example usage
+```
+python scripts/txt2img.py --n_samples 1 --n_iter 1 --plms --prompt "new born baby kitten. Hyper Detail, 8K, HD, Octane Rendering, Unreal Engine, V-Ray, full hd"
+```
+
 By default, this uses a guidance scale of `--scale 7.5`, [Katherine Crowson's implementation](https://github.com/CompVis/latent-diffusion/pull/51) of the [PLMS](https://arxiv.org/abs/2202.09778) sampler, 
 and renders images of size 512x512 (which it was trained on) in 50 steps. All supported arguments are listed below (type `python scripts/txt2img.py --help`).
 
